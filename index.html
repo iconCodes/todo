@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iConCodes: To Do List</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <div class="title">iConCodes</div>
+        <div class="title">
+          To Do's
+
+          <span id="task-completed-count">0</span>
+          /
+          <span id="task-count">0</span>
+          completed
+        </div>
 
         <div class="input-container">
           <input type="text" id="task-input" placeholder="...task" value="" />
@@ -17,39 +24,14 @@
         </div>
       </div>
 
-      <div id="task-container">
-        <div class="task-item">
-          <div class="status"></div>
-          <div class="task">Install VSCode</div>
-          <div class="delete">x</div>
-        </div>
+      <ul id="task-container"></ul>
 
-        <div class="task-item">
-          <div class="status"></div>
-          <div class="task">task 03</div>
-          <div class="delete">x</div>
-        </div>
-
-        <div class="task-item">
-          <div class="status"></div>
-          <div class="task">task 03</div>
-          <div class="delete">x</div>
-        </div>
-
-        <div class="task-item">
-          <div class="status"></div>
-          <div class="task">task 04</div>
-          <div class="delete">x</div>
-        </div>
-
-        <div class="task-item">
-          <div class="status"></div>
-          <div class="task">task 05</div>
-          <div class="delete">x</div>
-        </div>
+      <div class="button-wrapper">
+        <button class="theme-button" id="theme-button">Change Theme</button>
       </div>
     </div>
 
-    <script src="script-class.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>
